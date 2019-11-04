@@ -7,4 +7,4 @@ before_install:
 
 
 script:
-  - docker run dipyaman31/docker-react npm run test -- --coverage
+  - docker run -e CI=true dipyaman31/docker-react npm run test
